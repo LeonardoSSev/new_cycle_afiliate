@@ -461,69 +461,6 @@ http.send( params );
 									Seu Upline <?=$pegaupline['usuario'];?> (Nome: <?=$pegaupline['nome'];?>, Email: <?=$pegaupline['email'];?>, Whatsapp: <?=$pegaupline['whatsapp'];?>) não está ativo em sua fase no momento, aguardando ativação.
                     	</div>
 					  <?php } ?>
-
-				<?php if($habilitar == '0'){ ?>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="mb-4">LINK DE INDICAÇÃO ÚNICO</h5>
-
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control typeahead" name="query" id="query"
-                                            value="https://cdeanewcycle.com.br/cadastros/cdeanewcycle" data-provide="typeahead"
-                                            autocomplete="off">
-                                        <div class="input-group-append ">
-                                            <button type="button" onclick="copyLink()" class="btn btn-primary default">
-                                                COPIAR LINK
-                                            </button>
-                                            <script>
-                                    function copyLink() {
-										var copyText = document.getElementById("query");
-										copyText.select();
-										document.execCommand("copy");
-										}
-                                </script> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-					<?php }else if($habilitar == '1'){ ?>
-				  <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="mb-4">LINK DE INDICAÇÃO INDIVIDUAL</h5>
-
-                            <div class="row">
-                                <div class="col-sm-10">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control typeahead" name="query" id="query"
-                                            value="https://cdeanewcycle.com.br/cadastros/<?=$_SESSION['usuario'];?>" data-provide="typeahead"
-                                            autocomplete="off">
-                                        <div class="input-group-append ">
-                                            <button type="button" onclick="copyLink()" class="btn btn-primary default">
-                                                COPIAR LINK
-                                            </button>
-                                            <script>
-                                    function copyLink() {
-										var copyText = document.getElementById("query");
-										copyText.select();
-										document.execCommand("copy");
-										}
-                                </script> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-				
-					<?php } ?>			
-								
-
-						
-						
 						<!--Row-->
 						<div class="row">
 							<div class="col-12 col-sm-12">
