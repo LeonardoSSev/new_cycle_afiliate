@@ -1,0 +1,6 @@
+[25-Oct-2020 20:09:49 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/cdeanewc/public_html/afiliado/cadastros/index.php on line 106
+[25-Oct-2020 20:09:49 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/cdeanewc/public_html/afiliado/cadastros/app/model/usuario.php:20
+Stack trace:
+#0 /home/cdeanewc/public_html/afiliado/cadastros/index.php(108): Usuario->verificaindicacao(NULL, '')
+#1 {main}
+  thrown in /home/cdeanewc/public_html/afiliado/cadastros/app/model/usuario.php on line 20
